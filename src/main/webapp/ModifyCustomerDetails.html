@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify Customer Details</title>
+    <link rel="stylesheet" href="Adminstyle.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Banklogo.png" alt="Logo" height="50">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="AddCustomer.html">Add Customer</a></li>
+                    <li><a href="DeleteCustomer.html">Delete Customer</a></li>
+                    <li><a href="ModifyCustomerDetails.html">Modify Customer Details</a></li>
+                    <li><a href="ViewCustomerDetails.html">View Customer Details</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+                <h2>Modify Customer Details</h2>
+            <form action="ModifyCustomerDetails" method="post">
+                <label for="modifyAccountNo">Account No:</label>
+                <input type="text" id="modifyAccountNo" name="modifyAccountNo" required>
+                <label for="newFullName">New Full Name:</label>
+                <input type="text" id="newFullName" name="newFullName" required>
+                <label for="newAddress">New Address:</label>
+                <input type="text" id="newAddress" name="newAddress" required>
+                <label for="newMobileNo">New Mobile No:</label>
+                <input type="text" id="newMobileNo" name="newMobileNo" required>
+                <label for="newEmail">New Email ID:</label>
+                <input type="email" id="newEmail" name="newEmail" required>
+                <label for="newAccountType">New Type of Account:</label>
+                <select id="newAccountType" name="newAccountType" required>
+                    <option value="savings">Savings Account</option>
+                    <option value="current">Current Account</option>
+                </select>
+                <label for="newDob">New Date of Birth:</label>
+                <input type="date" id="newDob" name="newDob" required>
+                <label for="newIdProof">New ID Proof:</label>
+                <input type="text" id="newIdProof" name="newIdProof" required>
+                <input type="submit" value="Modify Details">
+            </form>
+</body>
+</html>

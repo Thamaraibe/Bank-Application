@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Customer Details</title>
+    <link rel="stylesheet" href="Adminstyle.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Banklogo.png" alt="Logo" height="50">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="AddCustomer.html">Add Customer</a></li>
+                    <li><a href="DeleteCustomer.html">Delete Customer</a></li>
+                    <li><a href="ModifyCustomerDetails.html">Modify Customer Details</a></li>
+                    <li><a href="ViewCustomerDetails.html">View Customer Details</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h2>View Customer Details</h2>
+    <form action="ViewCustomerDetails" method="post">
+        <label for="Account Number">Account Number:</label>
+        <input type="text" id="accountnumber" name="accountnumber" required>
+        
+        <input type="submit" value="View">
+    </form>
+</body>
+</html>

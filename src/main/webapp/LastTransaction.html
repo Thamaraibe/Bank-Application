@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Last 10 Transactions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.button-container {
+    text-align: center;
+    margin: 20px;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.logo {
+    float: left;
+    height: 40px;
+    padding: 5px 0;
+}
+
+nav {
+    float: right;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label, input, select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="number"], input[type="email"], select {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="date"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}</style>
+  <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Banklogo.png" alt="Logo" height="40">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="ChangePIN.html">Change Pin</a></li>
+                    <li><a href="Deposit.html">Deposit</a></li>
+                    <li><a href="Withdraw.html">Withdraw</a></li>
+                    <li><a href="ViewBalance.html">Check Balance</a></li>
+                    <li><a href="LastTransaction.html">Last 10 Transactions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h1>Transaction History</h1>
+<form action="LastTransaction">
+    <div class="button-container">
+    
+        <button>View Last 10 Transactions</button>
+    </div>
+</form>
+
+</body>
+</html>

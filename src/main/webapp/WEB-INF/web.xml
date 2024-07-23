@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>Bankapplication</display-name>
+ <servlet>
+        <servlet-name>abc1</servlet-name>
+        <servlet-class>servlet.AdminValidation</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>abc1</servlet-name>
+        <url-pattern>/Adminlogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>abc2</servlet-name>
+        <servlet-class>servlet.AddCustomer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>abc2</servlet-name>
+        <url-pattern>/AddCustomer</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>abc3</servlet-name>
+        <servlet-class>servlet.DeleteCustomer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>abc3</servlet-name>
+        <url-pattern>/DeleteCustomer</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>abc4</servlet-name>
+        <servlet-class>servlet.ModifyCustomerDetails</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>abc4</servlet-name>
+        <url-pattern>/ModifyCustomerDetails</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>abc5</servlet-name>
+        <servlet-class>servlet.ViewCustomerDetails</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>abc5</servlet-name>
+        <url-pattern>/ViewCustomerDetails</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>abc6</servlet-name>
+        <servlet-class>servlet.Userlogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>abc6</servlet-name>
+        <url-pattern>/Userlogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>abc7</servlet-name>
+        <servlet-class>servlet.ChangePIN</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>abc7</servlet-name>
+        <url-pattern>/ChangePIN</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>abc8</servlet-name>
+        <servlet-class>servlet.Deposit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>abc8</servlet-name>
+        <url-pattern>/Deposit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>abc9</servlet-name>
+        <servlet-class>servlet.Withdraw</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>abc9</servlet-name>
+        <url-pattern>/Withdraw</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>abc10</servlet-name>
+        <servlet-class>servlet.Last10Transaction</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>abc10</servlet-name>
+        <url-pattern>/LastTransaction</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>abc12</servlet-name>
+        <servlet-class>servlet.ViewBalance</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>abc12</servlet-name>
+        <url-pattern>/ViewBalance</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>abc11</servlet-name>
+        <servlet-class>servlet.PdfDownload</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>abc11</servlet-name>
+        <url-pattern>/PdfDownload</url-pattern>
+    </servlet-mapping>
+</web-app>

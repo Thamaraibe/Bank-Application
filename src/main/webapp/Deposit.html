@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit</title>
+    <link rel="stylesheet" href="Adminstyle.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Banklogo.png" alt="Logo" height="40">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="ChangePIN.html">Change Pin</a></li>
+                    <li><a href="Deposit.html">Deposit</a></li>
+                    <li><a href="Withdraw.html">Withdraw</a></li>
+                     <li><a href="ViewBalance.html">Check Balance</a></li>
+                    <li><a href="LastTransaction.html">Last 10 Transactions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h2>Deposit</h2>
+    <form action="Deposit" method="post">
+        <label for="Account Number">Account Number:</label>
+        <input type="text" id="accountnumber" name="accountnumber" required>
+        <label for="amount">Deposit Amount :</label>
+        <input type="text" id="amount" name="amount" required>
+        
+        
+        <input type="submit" value="Deposit">
+    </form>
+</body>
+</html>
